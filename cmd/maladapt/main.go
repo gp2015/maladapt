@@ -35,7 +35,7 @@ func main() {
 
 	addr := os.Getenv("MALADAPT_BIND_ADDR")
 	if addr == "" {
-		log.Fatal("could not fined `MALADAPT_BIND_ADDR`: %v", err)
+		log.Fatal("could not find `MALADAPT_BIND_ADDR`: %v", err)
 	}
 	quarantined_zone := os.Getenv("MALADAPT_QUARANTINE_PATH")
 
